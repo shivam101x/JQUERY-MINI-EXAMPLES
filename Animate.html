@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        .box {
+            width: 40%;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae at sunt ducimus natus sint sapiente debitis
+        impedit distinctio, quam quaerat voluptates odio. Vel temporibus ducimus minima pariatur, eligendi maxime?
+    </div>
+    <button>CLick</button>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function(){
+                $(".box").animate({
+                    left: "200px",
+                    zoom: "180%"
+                },3000)
+            })
+        })
+    
+    </script>
+</body>
+
+</html>
