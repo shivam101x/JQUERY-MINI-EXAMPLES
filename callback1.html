@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+        <h1>
+            BRIIIXTTTTON
+        </h1>
+        <button>Click me</button>
+        <input type="number" min="20" max="140" onchange="fun()">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi consequatur laboriosam sequi distinctio recusandae? Reiciendis cumque sunt nemo. Unde possimus provident blanditiis odit distinctio dolor non repellendus ratione sapiente.</p>
+        <script>
+            function fun(){
+                    $(document).ready(function(){
+                        let head=$("h1").text("Welcome to Brixton...");
+                        let size=$("input").val();
+                        head.css({
+                            "font-size":size+"px"
+                        })
+                    })
+
+            }
+          $(document).ready(function(){
+            $("button").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+
+          })
+
+            
+        </script>
+</html>
