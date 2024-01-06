@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 4000px;
+        }
+        #id{
+            position: sticky;
+            top: 0;
+        }
+        h1{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="ab"></h1>
+    <script>
+        window.addEventListener("scroll" , function(){
+            document.getElementById("ab").innerHTML=window.pageYOffset+"px"
+        })
+    </script>
+</body>
+</html>
