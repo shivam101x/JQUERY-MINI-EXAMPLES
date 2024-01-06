@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #eecccc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flip">Click to slide the panel down or up</div>
+    <div id="panel">Hello world!
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sequi qui eos quos quibusdam
+            necessitatibus culpa iure molestias totam quod fugiat minima fuga consequuntur quo reiciendis, dolorem
+            voluptatum, perspiciatis autem?</p>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>
