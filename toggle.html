@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .box{
+            display: flex;
+
+        }
+        p{
+            width: 40%;
+            border: 2px solid black;
+            padding: 10px 30px;
+            border-radius: 16px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo quis accusantium totam esse quos libero, ex dolorum blanditiis. Quas doloremque quam neque repellat itaque eveniet a dolor fugiat odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium officia fugit exercitationem inventore, fugiat eius impedit minus, maxime officiis ipsa soluta alias doloremque nemo nobis eos quidem dolorem ex aperiam!</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+                $("p").hover(function(){
+                    $(this).hide(1000);
+                })
+        })
+    </script>
+</body>
+</html>
