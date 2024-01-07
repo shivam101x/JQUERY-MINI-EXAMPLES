@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .box{
+            display: flex;
+
+        }
+        p{
+            width: 40%;
+            border: 2px solid black;
+            padding: 10px 30px;
+            border-radius: 16px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sed laudantium mollitia ut nam earum velit ullam eum? Voluptatibus id iste reiciendis obcaecati molestiae? Inventore fugiat quaerat consequuntur repellat autem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, cum ex. Quisquam amet omnis eligendi hic sint nesciunt, odit accusantium esse voluptatibus natus illum, libero ipsam maiores iusto suscipit dolores?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, vel quasi quas ipsam odio porro deleniti aspernatur sapiente minima dolore accusantium adipisci temporibus aperiam ducimus eum recusandae aut cumque maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet laudantium facere repellat doloremque, labore temporibus quasi architecto aliquam fugiat laboriosam porro iusto harum dolorem doloribus eaque obcaecati error ab?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo quis accusantium totam esse quos libero, ex dolorum blanditiis. Quas doloremque quam neque repellat itaque eveniet a dolor fugiat odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium officia fugit exercitationem inventore, fugiat eius impedit minus, maxime officiis ipsa soluta alias doloremque nemo nobis eos quidem dolorem ex aperiam!</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+                $("p").hover(function(){
+                    $(this).hide(1000);
+                })
+        })
+    </script>
+</body>
+</html>
